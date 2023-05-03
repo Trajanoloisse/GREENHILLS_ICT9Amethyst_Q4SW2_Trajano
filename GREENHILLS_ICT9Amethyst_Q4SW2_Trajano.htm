@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minutes to seconds</title>
+</head>
+<body>
+	<input type="text" id="id1" placeholder="minutes"><br>
+	<input type="text" id="id2" placeholder="60"><br>
+	<input type="submit" value="Compute" onclick="myFunction()"><br>
+	<p id="answer"></p>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = document.getElementById('id2').value;
+			var answer = num1 * num2;
+			document.getElementById('answer').innerHTML = "The product is " + answer;
+		}
+	</script>
+</body>
+</html>
